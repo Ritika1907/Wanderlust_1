@@ -26,26 +26,27 @@ To set up and run Wanderlust locally, execute the following commands:
 
 
 # 1️⃣ Clone the Repository
-sh
+```sh
 git clone https://github.com/aayush841/wanderlust.git  
 cd wanderlust  
-
+```
 
 # 2️⃣ Install Dependencies  
-sh
+```sh
 npm install
-
+```
 
 # 3️⃣ Set Up Environment Variables  
-sh
+```sh
 touch .env  
 echo "MONGO_URI=your_mongodb_connection_string" >> .env  
 echo "CLOUDINARY_CLOUD_NAME=your_cloud_name" >> .env  
 echo "CLOUDINARY_API_KEY=your_api_key" >> .env  
 echo "CLOUDINARY_API_SECRET=your_api_secret" >> .env  
 echo "SESSION_SECRET=your_session_secret" >> .env  
-
+```
 
 # 4️⃣ Start the Server 
-sh
+```sh
 nodemon app.js
+```
